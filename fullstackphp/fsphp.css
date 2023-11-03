@@ -187,17 +187,16 @@ form button:hover {
 }
 
 .xdebug-var-dump {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
     overflow: auto;
-    background: rgba(0, 0, 0, 0.05);
-    margin: 20px 0;
-    padding: 20px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
 }
 
-.xdebug-var-dump * {
-    font-family: "Source Code Pro", serif;
-    font-size: 0.8em;
-    margin: 0;
+.xdebug-var-dump pre {
+    white-space: pre-wrap;
 }

@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/FSPHP-EXEMPLES/02-iniciando-do-zero-com-php/02-12-valores-constantes" isTestSource="false" packagePrefix="Sourse" />
       <sourceFolder url="file://$MODULE_DIR$/fw-iniciando-do-zero-com-php/02-iniciando-do-zero-com-php/02-12-valores-constantes" isTestSource="false" packagePrefix="Sourse" />
     </content>
     <orderEntry type="inheritedJdk" />

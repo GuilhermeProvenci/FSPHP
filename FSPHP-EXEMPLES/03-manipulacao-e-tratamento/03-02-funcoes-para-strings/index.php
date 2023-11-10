@@ -55,11 +55,46 @@ var_dump([
 
 ]);
 
+$mbStrReplace = $string;
+
+echo "<p>", $mbReplace, "</p>";
+echo "<p>", str_replace("AC/DC", "Nirvana", $mbStrReplace), "</p>";
+echo "<p>", str_replace(["AC/DC", "eu fui", "último"], "Nirvana", $mbStrReplace), "</p>";
+echo "<p>", str_replace(["AC/DC", "incrível"], ["Nirvana", "épico!!"], $mbStrReplace), "</p>";
+
+
+$article = <<<ROCK
+    <article>
+        <h3>event</h3>
+        <p>desc</p>
+</article>
+ROCK;
+
+$articleData = [
+    "event" => "Rock In Rio",
+    "desc" => $mbReplace
+];
+
+echo str_replace(array_keys($articleData), array_values($articleData), $article);
 
 /**
  * [ parse string ] parse_str | mb_parse_str
  */
 fullStackPHPClassSession("parse string", __LINE__);
+
+
+$endPoint = "name=Guilherme&email=curso@upinside.com.br";
+mb_parse_str($endPoint, $parseEndPoint);
+
+var_dump([
+    $endPoint,
+    $parseEndPoint,
+    (object)$parseEndPoint
+]);
+
+
+
+
 
 
 echo "</pre>";

@@ -35,7 +35,12 @@ echo "<p>Hoje é dia ", getdate()["mday"], "!</p>";
 fullStackPHPClassSession("string to date", __LINE__);
 
 var_dump([
-    "strtotime NOW" => strtotime("now")
+    "strtotime NOW" => strtotime("now"),
+    "time" => time(),
+    "strtotime" => strtotime("+10days"),
+    "date DATE_BR" => date(DATE_BR),
+    "date +10days" => date(DATE_BR, strtotime("+10days")),
+    "date -10days" => date(DATE_BR, strtotime("-10days")),
 ]);
 
 echo "</pre>";

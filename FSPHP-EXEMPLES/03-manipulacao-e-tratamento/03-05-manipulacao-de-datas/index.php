@@ -41,6 +41,16 @@ var_dump([
     "date DATE_BR" => date(DATE_BR),
     "date +10days" => date(DATE_BR, strtotime("+10days")),
     "date -10days" => date(DATE_BR, strtotime("-10days")),
+    "date +1year" => date(DATE_BR, strtotime("+1year")),
 ]);
+
+
+$format = "d/m/Y H\hi";
+echo "<p>A data de hoje é ", date($format), " minutos</p>";
+echo "<p>Hoje é dia ", strftime("%d do %m de %Y às %H horas e %M minutos"), "</p>";
+
+
+
+
 
 echo "</pre>";

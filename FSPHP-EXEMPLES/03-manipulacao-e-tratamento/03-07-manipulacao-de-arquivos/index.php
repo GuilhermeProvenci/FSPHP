@@ -7,6 +7,14 @@ fullStackPHPClassName("03.07 - Manipulação de arquivos");
  */
 fullStackPHPClassSession("verificação", __LINE__);
 
+$file = __DIR__ .  "/file.txt";
+
+if(file_exists($file) && is_file($file)){
+    echo "<p> Existe!</p>";
+}else{
+    echo "<p> Não Existe </p>";
+}
+
 
 /*
  * [ leitura e gravação ] fopen | fwrite | fclose | file

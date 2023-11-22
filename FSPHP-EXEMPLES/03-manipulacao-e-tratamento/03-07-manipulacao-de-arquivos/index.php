@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/../../../fullstackphp/fsphp.php';
 fullStackPHPClassName("03.07 - Manipulação de arquivos");
-
+echo "<pre>";
 /*
  * [ verificação de arquivos ] file_exists | is_file | is_dir
  */
